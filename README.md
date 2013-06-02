@@ -1,4 +1,4 @@
 ZfLib
 =====
 
-Some Zend Framework 2 utilities
+Some Zend Framework 2 utilities (work in progress ....)
