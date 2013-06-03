@@ -1,6 +1,6 @@
 {
     "name" : "manuscle/zf-lib",
-    "description" : "Module description",
+    "description" : "Some Zend Framework 2 utilities",
     "type" : "module",
     "license" : "BSD-3-Clause",
     "homepage" : "https://github.com/manuscle/ZfLib",
