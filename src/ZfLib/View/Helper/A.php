@@ -14,7 +14,6 @@ class A extends AbstractHtmlElement
 {
     public function __invoke($url, $innerHTML = null, array $options = array())
     {
-        $options['href'] = $url;
         // Avoid to match 0
         if ($innerHTML === null || $innerHTML === '') {
             $innerHTML = $url;
@@ -24,6 +23,7 @@ class A extends AbstractHtmlElement
             && !preg_match("/([\<])([^\>]{1,})*([\>])/i", $innerHTML)) {
             $options['title'] = $innerHTML;
         }
-        return sprintf('<a%s>%s</a>', $this->htmlAttribs($options), $innerHTML);
+        // Don't escape the the href attrib ...
+        return sprintf('<a%s href="%s">%s</a>', $this->htmlAttribs($options), $url, $innerHTML);
     }
 }

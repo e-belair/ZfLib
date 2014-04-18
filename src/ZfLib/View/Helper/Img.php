@@ -12,10 +12,16 @@ use Zend\View\Helper\AbstractHtmlElement;
 
 class Img extends AbstractHtmlElement
 {
+    /**
+     * @param $src
+     * @param $alt
+     * @param array $options
+     * @return string
+     */
     public function __invoke($src, $alt, array $options = array())
     {
-        $options['src'] = $src;
         $options['alt'] = $alt;
-        return sprintf('<img%s />', $this->htmlAttribs($options));
+        // Don't escape the src attrib ...
+        return sprintf('<img%s src="%s"/>', $this->htmlAttribs($options), $src);
     }
 }
