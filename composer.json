@@ -1,9 +1,9 @@
 {
-    "name" : "manuscle/zf-lib",
+    "name" : "e-belair/zf-lib",
     "description" : "Some Zend Framework 2 utilities",
     "type" : "module",
     "license" : "BSD-3-Clause",
-    "homepage" : "https://github.com/manuscle/ZfLib",
+    "homepage" : "https://github.com/e-belair/ZfLib",
     "keywords" : [
         "zf2",
         "module"
